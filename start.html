@@ -1,19 +1,193 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg" href="./icon.svg" />
+    <script src="script.js"></script>
+    <meta name="author" content="Summer Cinema" />
+    <meta name="description" content="Registering" />
+    <meta name="keywords" content="Summer Cinema, Registering" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Summer Cinema Registeration" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:url" content="image.jpg" />
+    <meta property="og:image:alt" content="Summer Cinema Registeration" />
+    <meta property="og:site_name" content="Summer Cinema" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      property="og:url"
+      content="https://www.summercinema.com/registeration.html"
     />
-    <title>HTML Lesson</title>
-    <style>
-      label {
-        display: block;
-      }
-    </style>
+    <title>Summer Cinema</title>
   </head>
+  <body>
+    <header>
+      <center>
+        <div>
+          <h1>Summer Cinema</h1>
+        </div>
+      </center>
 
-  <body></body>
+      <section>
+        <center>
+          <img src="./icon.svg" alt="Summer Cinema" width="500" height="300" />
+        </center>
+      </section>
+    </header>
+    <main>
+      <div>
+        <form method="get" action="./payment.html">
+          <fieldset>
+            <legend>
+              <h3>Personal Data</h3>
+            </legend>
+            <center>
+              <div>
+                <label for="email_address"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:
+                  <abbr title="Required">*</abbr></label
+                >
+                <input
+                  type="email"
+                  name="email_address"
+                  id="email_address"
+                  placeholder="sample@sample.com"
+                  maxlength="60"
+                  size="20"
+                  tabindex="0"
+                  required
+                  autofocus
+                />
+              </div>
+              <br />
+              <div>
+                <label for="password_set"
+                  >&nbsp;&nbsp;Password: <abbr title="required">*</abbr></label
+                >
+                <input
+                  type="password"
+                  name="password_set"
+                  id="password_set"
+                  placeholder="*********************"
+                  size="20"
+                  required
+                />
+              </div>
+              <br />
+              <div>
+                <label for="password_confirm"
+                  >Confirm Password: <abbr title="required">*</abbr></label
+                >
+                <input
+                  type="password"
+                  name="password_confirm"
+                  id="password_confirm"
+                  placeholder="*********************"
+                  size="20"
+                  required
+                />
+              </div>
+              <br />
+              <div>
+                <label for="first_name"
+                  >First Name: <abbr title="required">*</abbr></label
+                >
+                <input
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <br />
+              <div>
+                <label for="">Last Name: <abbr title="required">*</abbr></label>
+                <input
+                  type="text"
+                  name="last_name"
+                  id="last_name"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+              <br />
+              <div>
+                <label for="date_of_birth"
+                  >Date of Birth <abbr title="required">*</abbr></label
+                >
+                <input
+                  type="date"
+                  id="date_of_birth"
+                  name="date_of_birth"
+                  required
+                />
+              </div>
+              <br />
+              <div>
+                <label for="phone"
+                  >Phone: <abbr title="required">*</abbr></label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="777777777777"
+                  required
+                />
+              </div>
+              <br />
+              <div>
+                <label for="plan"
+                  >Choose plan: <abbr title="required">*</abbr></label
+                >
+                <select name="plan" id="plan">
+                  <option value="free_plan">Free plan</option>
+                  <option value="basic_plan">Basic plan</option>
+                  <option value="middle_plan">Middle plan</option>
+                  <option value="premium_plan">Premium Plan</option>
+                </select>
+
+                <input type="checkbox" name="pro_plan" id="pro_plan" />
+                <label for="pro_plan">Pro Plan</label>
+              </div>
+              <br />
+
+              <br />
+
+              <div>
+                <!-- This button will direct you to the next page and will submit the data at the same time-->
+                <button>Submit</button>
+              </div>
+            </center>
+          </fieldset>
+        </form>
+      </div>
+      <br />
+      <br /><br /><br /><br /><br /><br />
+    </main>
+    <footer>
+      <center>
+        <ul>
+          <li>
+            <div>
+              <a href="https://www.facebook.com/summercinema">Facebook</a>
+            </div>
+          </li>
+          <br />
+          <li>
+            <div>
+              <a href="https://www.instagram.com/summercinema">Instagram</a>
+            </div>
+          </li>
+          <br />
+          <li>
+            <div>
+              <a href="https://www.twitter.com/summercinema">Twitter</a>
+            </div>
+          </li>
+        </ul>
+      </center>
+    </footer>
+  </body>
 </html>
