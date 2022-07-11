@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg" href="./icon.svg" />
+    <script src="script.js"></script>
+    <meta name="author" content="Summer Cinema" />
+    <meta name="description" content="Registering" />
+    <meta name="keywords" content="Summer Cinema, Registering" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Summer Cinema Payment Data" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:url" content="image.jpg" />
+    <meta property="og:image:alt" content="Summer Cinema Payment Data" />
+    <meta property="og:site_name" content="Summer Cinema" />
+    <meta
+      property="og:url"
+      content="https://www.summercinema.com/registeration.html"
+    />
+    <title>Summer Cinema</title>
+  </head>
+  
+  <body>
+    <header>
+      <center>
+
+      <div>
+      
+          <img src="./icon.svg" alt="Summer Cinema" width="500" height="300" />
+        
+      </div>
+      <div>
+          <h1>Credit Card Information</h1>
+      </div>
+      </center>
+    </header>
+    <main>
+      <form action="server-here">
+        <ul>
+
+            <center>
+              <div>
+                <label for="ccn"
+                  >Credit Card Number: <abbr title="required">*</abbr></label
+                >
+                <input
+                  id="ccn"
+                  type="tel"
+                  pattern="[0-9\s]{13,19}"
+                  maxlength="19"
+                  placeholder="xxxx xxxx xxxx xxxx"
+                  required
+                  autofocus
+                />
+              </div>
+  
+
+          <br />
+              <div>
+                <label for="cvc_number"
+                  >CVC: <abbr title="required">*</abbr></label
+                >
+                <input type="text" id="cvc_number" name="cvc_number" required size="4"/>
+              </div>
+          <br />
+
+              <div>
+                <label for="expiration_date"
+                  >Expiration Date: <abbr title="required">*</abbr></label
+                >
+                <input
+                  type="date"
+                  id="expiration_date"
+                  name="expiration_date"
+                  required
+                />
+              </div>
+          <br />
+              <div>
+                <label for="billing_address"
+                  >Billing Address: <abbr title="required">*</abbr></label
+                >
+                <input
+                  type="text"
+                  id="billing_address"
+                  name="billing_address"
+                  required
+                />
+              </div>
+              <br>
+              <div>
+                <button>Submit</button>
+              </div>
+            </center>
+      </form>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <div>
+            <a href="https://www.facebook.com/summercinema">Facebook</a>
+          </div>
+        </li>
+        <br />
+        <li>
+          <div>
+            <a href="https://www.instagram.com/summercinema">Instagram</a>
+          </div>
+        </li>
+        <br />
+        <li>
+          <div>
+            <a href="https://www.twitter.com/summercinema">Twitter</a>
+          </div>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

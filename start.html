@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <base target="_blank" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/svg" href="./icon.svg" />
     <script src="script.js"></script>
@@ -37,7 +36,7 @@
     </header>
     <main>
       <div>
-        <form method="get" action="mypc">
+        <form method="get" action="./payment.html">
           <fieldset>
             <legend>
               <h3>Personal Data</h3>
@@ -153,17 +152,13 @@
                 <label for="pro_plan">Pro Plan</label>
               </div>
               <br />
+
+              <br />
+
               <div>
-                <label for="ccn">Credit Card Number:</label>
-                <input
-                  id="ccn"
-                  type="tel"
-                  pattern="[0-9\s]{13,19}"
-                  maxlength="19"
-                  placeholder="xxxx xxxx xxxx xxxx"
-                />
+                <!-- This button will direct you to the next page and will submit the data at the same time-->
+                <button>Submit</button>
               </div>
-              <div></div>
             </center>
           </fieldset>
         </form>
@@ -171,6 +166,28 @@
       <br />
       <br /><br /><br /><br /><br /><br />
     </main>
-    <footer></footer>
+    <footer>
+      <center>
+        <ul>
+          <li>
+            <div>
+              <a href="https://www.facebook.com/summercinema">Facebook</a>
+            </div>
+          </li>
+          <br />
+          <li>
+            <div>
+              <a href="https://www.instagram.com/summercinema">Instagram</a>
+            </div>
+          </li>
+          <br />
+          <li>
+            <div>
+              <a href="https://www.twitter.com/summercinema">Twitter</a>
+            </div>
+          </li>
+        </ul>
+      </center>
+    </footer>
   </body>
 </html>
